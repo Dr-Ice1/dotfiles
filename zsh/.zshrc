@@ -114,6 +114,8 @@ alias e='exit'
 alias n='nvim'
 alias ls='ls -a --color=always'
 
+
+
 plugins=( 
     git
     tmux
@@ -138,6 +140,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export ZDOTDIR=$HOME/dotfiles/zsh
 
 # NEW NVIM DIRECTORY
-export XDG_CONFIG_HOME=$HOME/dotfiles/nvim
+export XDG_CONFIG_HOME=$HOME/dotfiles
 
+export PATH=~/dotfiles/emacs/bin:$PATH
 
