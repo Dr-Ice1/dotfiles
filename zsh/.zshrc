@@ -134,9 +134,10 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.config/emacs/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
+# NEW ZSH DIRECTORY
 export ZDOTDIR=$HOME/dotfiles/zsh
 
+# NEW NVIM DIRECTORY
 export XDG_CONFIG_HOME=$HOME/dotfiles/nvim
-
 
 
