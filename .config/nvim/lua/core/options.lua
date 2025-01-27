@@ -19,6 +19,10 @@ opt.linebreak = true
 opt.breakindent = true
 vim.keymap.set('n', 'j', 'gj', { noremap = true })
 vim.keymap.set('n', 'k', 'gk', { noremap = true })
+vim.keymap.set('v', 'j', 'gj', { noremap = true })
+vim.keymap.set('v', 'k', 'gk', { noremap = true })
+
+
 
 -- search settings
 opt.ignorecase = true
