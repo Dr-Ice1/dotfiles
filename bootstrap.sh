@@ -14,7 +14,7 @@ brew update
 
 # Install necessary programs using Homebrew
 echo "Installing necessary programs..."
-brew install zsh neovim git stow curl kitty
+brew install zsh neovim git stow curl kitty emacs
 
 # Install Oh My Zsh if not already installed
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
@@ -45,12 +45,14 @@ echo "Creating symlinks using Stow..."
 cd ~/dotfiles || exit
 stow .
 
-# Install Neovim plugins (assuming vim-plug is used)
-if [ ! -d "$HOME/.local/share/nvim/site/autoload/plug.vim" ]; then
-    echo "Installing Neovim plugins..."
-    curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    nvim +PlugInstall +qall
+
+# Install Doom Emacs if it's not already installed
+if [ ! -d "$HOME/.emacs.d" ]; then
+    echo "Installing Doom Emacs..."
+    git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+    ~/.emacs.d/bin/doom install
+else
+    echo "Doom Emacs is already installed."
 fi
 
 # Final Message
