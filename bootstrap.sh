@@ -55,6 +55,10 @@ else
     echo "Doom Emacs is already installed."
 fi
 
+echo "Running Doom Sync..."
+doom sync
+
+
 # Final Message
 echo "Bootstrap complete. You may need to restart your terminal or your machine for all changes to take effect."
 
