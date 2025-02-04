@@ -135,7 +135,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="$HOME/.config/emacs/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-export TMUX_CONF="$HOME/.config/tmux/tmux.conf"
+export TMUX_CONF="$HOME/.config/tmux/.tmux.conf"
 
 export PATH=$HOME/dotfiles/emacs/bin:$PATH
 

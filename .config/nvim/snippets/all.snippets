@@ -439,7 +439,7 @@ snippet center 'center markdown'
 	<div style="text-align: center;"></div>
 
 snippet sup "superscript md"
-	<sup><b>$1</b></sup>
+	<sup style="color: black;"><b>$1</b></sup>
 
 snippet boldhtml "<b></b>"
 	<b>$1</b>
@@ -460,8 +460,8 @@ snippet trastlink "link with one asterisk"
 	<a href="$1" target="_blank"><b>∗∗∗</b></a>
 
 snippet paddinghtml "padding space"
-	<div style="padding-left: 20px; padding-right: 20px;">
-
+	<div style="padding-left: 20px; padding-right: 20px; border: 1.5px solid grey;">
+	$1
 	</div><br>
 
 snippet anchor 'hmtl anchor with name'
@@ -484,3 +484,6 @@ snippet ftrastlink
 
 snippet fdastlink
 	<a href="https://biblehub.com/text/$1/$2.htm" target="_blank"><b>∗∗</b></a>
+
+snippet redhtml "red colored text"
+	<span style="color: red;"></span>
