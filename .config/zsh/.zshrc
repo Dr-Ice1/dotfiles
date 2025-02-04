@@ -114,7 +114,10 @@ alias e='exit'
 alias n='nvim'
 alias ls='ls -a --color=always'
 alias k='kitty'
-
+alias a='git add .'
+alias m='git commit -m "."'
+alias p='git push'
+alias s='stow .'
 
 plugins=( 
     git
