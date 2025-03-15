@@ -118,6 +118,8 @@ alias a='git add .'
 alias m='git commit -m "."'
 alias p='git push'
 alias s='stow .'
+alias chrome='google-chrome-stable --ozone-platform=wayland & disown'
+
 
 plugins=( 
     git
@@ -125,7 +127,7 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
-fastfetch
+neofetch
 
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 

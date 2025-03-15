@@ -1,13 +1,13 @@
 return{
   "iamcco/markdown-preview.nvim",
   cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-  build = "cd app && yarn install",
+  build = "cd app && npm install",
   init = function()
     vim.g.mkdp_filetypes = { "markdown", "md" }
   end,
   ft = { "markdown" ,'md'},
   config = function ()
-    vim.g.mkdp_browser = 'google-chrome'
+    vim.g.mkdp_auto_start = 1
     vim.g.mkdp_theme = 'light'
     vim.g.mkdp_preview_options = {
       mkit = {},
