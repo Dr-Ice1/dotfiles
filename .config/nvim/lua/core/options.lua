@@ -9,8 +9,8 @@ opt.tabstop = 2
 opt.shiftwidth = 2
 opt.softtabstop = 2
 opt.expandtab = true
-opt.autoindent = true
-opt.smartindent = true
+opt.autoindent = false
+opt.smartindent = false
 
 
 -- line wrapping
@@ -48,3 +48,14 @@ opt.splitbelow = true
 
 opt.iskeyword:append("-")
 opt.mouse:append("a")
+
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "html",
+  callback = function()
+    vim.opt_local.indentexpr = ""
+  end,
+})
+
+
+

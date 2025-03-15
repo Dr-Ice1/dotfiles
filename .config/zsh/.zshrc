@@ -144,10 +144,10 @@ export PATH=$HOME/dotfiles/emacs/bin:$PATH
 
 
 # Check if Kitty is already running, and only run it once
-if [[ -z "$KITTY_PID" ]]; then
-    export KITTY_PID=$$
-    kitty &
-fi
+#if [[ -z "$KITTY_PID" ]]; then
+#    export KITTY_PID=$$
+#    kitty &
+#fi
 
 
 

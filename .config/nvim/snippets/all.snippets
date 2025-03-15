@@ -493,6 +493,28 @@ snippet fbibtrastlink
 
 snippet resources
 	<div style="padding-left: 20px; padding-right: 20px;">
-	
+		$1
 	</div><br>
 
+snippet laplace 'laplace transformation'
+	\mathcal{L}\{$1\\}(s)
+
+snippet thrmbox 'blue box'
+	<div style="border: 3px solid #539bf5; padding: 10px; display: inline-block; display: flex; align-items: center; gap: 10px;max-width: fit-content;">
+  	$1
+	</div>
+
+snippet redbox 'red def box'
+	<div style="border: 3px solid red; padding: 10px; display: inline-block; display: flex; align-items: center; gap: 10px;max-width: fit-content;">
+		<b>Definition</b>: <br>
+		$1
+	</div>
+
+snippet latlink 'latex link new tab'
+	\href{javascript:window.open('');}{$1}
+
+snippet h4
+	<h4 id='$1'><a href="#$1" target="_blank">$1</a></h4>
+
+snippet h3
+	<h3 id='$1'><a href="#$1" target="_blank">$1</a></h3>
