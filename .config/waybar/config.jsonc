@@ -10,11 +10,13 @@
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/submap",
-        "wlr/taskbar"
+        "wlr/taskbar",
+        "custom/chrome",
+        "user"
 ],
 
     "modules-center": [
-        "clock",
+        "clock"
     ],
 
     "modules-right": [
@@ -35,15 +37,15 @@
         "all-outputs": true,
         "format": "{icon}",
         "format-icons": {
-            "1": "󰋜",
-            "2": "",
+            "1": "󱃮",
+            "2": "󰣇",
             "3": "",
-            "4": "󰙯",
-            "5": "󰎄",
-            "6": "󰎆",
-            "7": "󰎇",
-            "8": "󰎉",
-            "9": "󰎋",
+            "4": "",
+            "5": "󰺾",
+            "6": "",
+            "7": "",
+            "8": "󰊕",
+            "9": "󰲅",
             "10": "󰎍",
             "urgent": "󰗖",
             "focused": "󰗖",
@@ -72,8 +74,8 @@
     },
 
     "clock": {
-        "format": "{:%I:%M %p}",
-        "format-alt": "{:%Y-%m-%d | %I:%M %p}",
+        "format": "{:%H:%M} ",
+        "format-alt": "{:%Y-%m-%d | %H:%M}",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt>{calendar}</tt>",
         "calendar": {
             "mode": "month",
@@ -92,7 +94,14 @@
             "on-click-right": "tz_list"
         }
     },
-
+    "user": {
+        "format": "{user} ({work_H} hours today)",
+        "interval": 60,
+        "height": 30,
+        "width": 30,
+        "icon": true,
+},
+    
     "cpu": {
         "format": "󰘚 {usage}%",
         "tooltip": true,
@@ -134,16 +143,18 @@
     },
 
     "network": {
-        "format-wifi": "󰤨 {essid}",
-        "format-ethernet": "󰈀 {ipaddr}/{cidr}",
+        "format-wifi": "󰤨 {essid} {signalStrength}%",
+        "format-ethernet": "󰈀 {ifname} {bandwidthUpBits} {bandwidthDownBits}",
         "format-disconnected": "󰤮 Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}/{cidr}\n󰤨 {essid} ({signalStrength}%)\n󱘖 {bandwidthUpBits}\n󱘒 {bandwidthDownBits}",
-        "on-click": "nm-connection-editor"
+        "on-click": "nm-connection-editor",
+        "tooltip": "true"
     },
 
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": "󰝟 Muted",
+        "format-bluetooth": "{volume}% {icon} ",
         "format-icons": {
             "headphone": "󰋋",
             "hands-free": "󰋎",
@@ -174,6 +185,11 @@
     "custom/power": {
         "format": "󰐥",
         "on-click": "wlogout",
+        "tooltip": false
+    },
+    "custom/chrome": {
+        "format": " Chrome",
+        "on-click": "google-chrome-stable",
         "tooltip": false
     }
 }

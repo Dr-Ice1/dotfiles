@@ -119,6 +119,7 @@ alias m='git commit -m "."'
 alias p='git push'
 alias s='stow .'
 alias chrome='google-chrome-stable --ozone-platform=wayland & disown'
+alias bluetooth='blueman-manager'
 
 
 plugins=( 
@@ -144,6 +145,7 @@ export TMUX_CONF="$HOME/tmux/tmux.conf"
 
 export PATH=$HOME/dotfiles/emacs/bin:$PATH
 
+export EDITOR=nvim
 
 # Check if Kitty is already running, and only run it once
 #if [[ -z "$KITTY_PID" ]]; then

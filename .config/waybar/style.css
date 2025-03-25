@@ -48,6 +48,8 @@ tooltip label {
 #language,
 #backlight,
 #window,
+#custom-chrome,
+#user,
 #disk {
     margin: 5px 2px;
     padding: 0 12px;
@@ -179,6 +181,12 @@ tooltip label {
     color: @color7;
     margin-right: 6px;
 }
+
+#custom-chrome {
+    background-color: @color13;
+    color: @color0;
+}
+
 
 /* System tray */
 #tray {
