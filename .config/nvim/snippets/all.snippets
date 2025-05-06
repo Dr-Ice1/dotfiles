@@ -267,7 +267,7 @@ snippet mini "Minipage"
 		$1
 	\end{minipage}
 
-snippet vec "vector 2D"
+snippet vec2 "vector 2D"
 	$1=\begin{pmatrix}
 		$2\\\
 		$3\\\
@@ -500,12 +500,16 @@ snippet laplace 'laplace transformation'
 	\mathcal{L}\{$1\\}(s)
 
 snippet thrmbox 'blue box'
-	<div style="border: 3px solid #539bf5; padding: 10px; display: inline-block; display: flex; align-items: center; gap: 10px;max-width: fit-content;">
+	<div style="border: 3px solid #539bf5; padding: 10px; display: inline-block; 
+	display: flex; align-items: center; 
+	gap: 10px;max-width: fit-content;">
   	$1
 	</div>
 
 snippet redbox 'red def box'
-	<div style="border: 3px solid red; padding: 10px; display: inline-block; display: flex; align-items: center; gap: 10px;max-width: fit-content;">
+	<div style="border: 3px solid red; padding: 10px; display: inline-block; 
+	display: flex; align-items: center; 
+	gap: 10px;max-width: fit-content;">
 		<b>Definition</b>: <br>
 		$1
 	</div>
@@ -527,3 +531,9 @@ snippet intinf 'infinite integral'
 
 snippet intinfz 'integral zero to infty'
 	\int_{0}^{\infty} $1 \,\text{d}$2
+
+snippet del "partial derivative"
+	\partial
+
+snippet vecbf "vector notation BOLD"
+	\mathbf{$1}
